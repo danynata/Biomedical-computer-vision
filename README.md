@@ -42,6 +42,6 @@ questo permette di semplificare il codice che ha il compito di importare immagin
 - [] rendere sensibile all'update dei parametri non solo i classificatori ma anche il layer backbone numero 4, il che permetterebbe un adattamento del modello ad estrarre migliori feature di alto livello maggiormente utili alla fase di segmentazione vera e propria
 - [] introduzione di preprocessing, differenziato in base all'efficacia nei confronti delle 3 modalità di acquisizione (T1in, T1out, T2)
 - [] aggiunta trasformazione in data augmentation: aggiunta rumore gaussiano
-- [] rendere l'output di classificazione per ciascuna delle classi binario. ovverosia: un pixel o assume valore True o assume un valore False, anziché avere un dominio costituito da un range di 256 valori
+- [] rendere l'output di classificazione per ciascuna delle classi binario. ovverosia: un pixel o assume valore True o assume un valore False, anziché avere un dominio costituito da un range di 256 valori, tramite una step function activation function
   - idealmente ciò provvede non solo a rendere l'output della segmentazione più chiaro, ma anche a fornire feedback piu netto nel momento del calcolo della loss
 
